@@ -1,31 +1,27 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Line } from './styles';
 
 const Container = styled.div`
-padding: 1.5rem 3% ;
+  padding: 1.5rem 3% ;
 `;
 
 const H2 = styled.h2`
-color: #979191;
-text-align: center;
-font-size: 4.5rem;
-margin: 2rem 0;
+  color: #979191;
+  text-align: center;
+  font-size: 4.5rem;
+  margin: 2rem 0;
 `;
 
 const Title = styled.p`
-padding: 1.5rem 3% ;
-font-size: 2rem;
-`;
-
-const Line = styled.div`
-border: 0.1rem solid gray;
-margin: 1rem 0;
+  padding: 1.5rem 3% ;
+  font-size: 2rem;
 `;
 
 const Menu = styled.div`
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 `;
 
 const Button = styled.button`
