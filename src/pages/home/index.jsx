@@ -1,6 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Line } from '../../components/styles';
+import facebookIcon from '../../resource/images/facebook.jpg';
+import instagramIcon from '../../resource/images/instagram.png';
+import twitterIcon from '../../resource/images/twitter.png';
+import linkedinIcon from '../../resource/images/linkedin.png';
+
+
 
 const Container = styled.div`
   padding: 0 3% ;
@@ -22,13 +28,17 @@ const Social = styled.div`
   justify-content: space-between;
 `;
 
-const Button = styled.button`
-  min-width: 3.5rem;
-  height: 3.5rem;
+
+const Anchor = styled.a`
+
+`;
+
+const Img = styled.img`
+  min-width: 4rem;
+  height: 4rem;
   margin: 0 1.5rem;
   background-color: transparent;
   border-radius: 50%;
-  border: 0.1rem solid black;
   cursor: pointer;
   :hover {
     width: 4.5rem;
@@ -51,11 +61,13 @@ const Home = () => {
       <Section id='Social'>
         <Line /> 
           <Social>
-          <Button> </Button>  <Button> </Button>
-          <Button> </Button>  <Button> </Button>
+          <Anchor href='#'> <Img src={facebookIcon}/> </Anchor>
+          <Anchor href='#'> <Img src={instagramIcon}/> </Anchor>
+          <Anchor href='#'> <Img src={twitterIcon}/> </Anchor>
+          <Anchor href='#'> <Img src={linkedinIcon}/> </Anchor>
           </Social>
         <Line />
-      </Section>
+      </Section>                     
     </Container>
   )
 }
