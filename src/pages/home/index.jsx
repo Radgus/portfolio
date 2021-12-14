@@ -50,14 +50,14 @@ const Home = () => {
   return (
     <Container>
       <Section id='Summary'>
-        <h3>Summary</h3> <br />
+        <h2>Summary</h2> <br />
         <p className='section__p'>
         Fullstack web developer with 4+ years of experience developing and implementing web systems. 
         I consider myself a responsible and honest person with interest in technological areas.
         </p>
       </Section>
       <Section id='Portfolio'>
-        <h3>Portfolio</h3> <br />
+        <h2>Portfolio</h2> <br />
         <ImgMediaCard 
           src={pokemonLogo}
           title='Yan ken Pokemon'

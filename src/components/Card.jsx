@@ -10,7 +10,7 @@ import styled from 'styled-components';
 const A= styled.a`
   text-decoration: none;
   color: black;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 `;
 
 export default function ImgMediaCard(props) {
