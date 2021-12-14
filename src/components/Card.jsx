@@ -15,13 +15,9 @@ const A= styled.a`
 
 export default function ImgMediaCard(props) {
 
-  const handleInfo = () => {
-
-  }
-
   return (
     <Card sx={{ maxWidth: 345 }}>
-      <A href="https://radgus.github.io/yankenpokemon/">
+      <A href="https://radgus.github.io/yankenpokemon/" target="_blank">
         <CardMedia
           component="img"
           alt="green iguana"
@@ -38,10 +34,16 @@ export default function ImgMediaCard(props) {
         </Typography>
       </CardContent>
       <CardActions>
-        <A href="https://radgus.github.io/yankenpokemon/"><b>Web site: </b>https://radgus.github.io/yankenpokemon/</A>
+        <A href="https://radgus.github.io/yankenpokemon/"  target="_blank">
+          <b>Web site: </b>
+          https://radgus.github.io/yankenpokemon/
+        </A>
       </CardActions>
       <CardActions>
-        <A href="https://github.com/Radgus/yankenpokemon"><b>Github: </b>https://github.com/Radgus/yankenpokemon</A>
+        <A href="https://github.com/Radgus/yankenpokemon"  target="_blank">
+          <b>Github: </b>
+          https://github.com/Radgus/yankenpokemon
+        </A>
       </CardActions>
     </Card>
   );
