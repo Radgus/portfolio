@@ -8,6 +8,7 @@ const App = () => (
     <Layout>
       <Routes>
         <Route exac path='/' element={<Home/>} />
+        <Route exac path='/portfolio' element={<Home/>} />
       </Routes>
     </Layout>
   </BrowserRouter>
