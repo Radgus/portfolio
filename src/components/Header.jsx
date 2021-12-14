@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Line } from './styles';
+import reactLogo from '../resource/images/react.svg';
 
 const Container = styled.div`
   padding: 1.5rem 3% ;
@@ -16,6 +17,8 @@ const H2 = styled.h2`
 const Title = styled.p`
   padding: 1.5rem 3% ;
   font-size: 2rem;
+  display: flex;
+  align-items: center;
 `;
 
 const Menu = styled.div`
@@ -42,12 +45,16 @@ const goSection = (id) => {
   document.getElementById(id).scrollIntoView({block: "start", behavior: "smooth"})
 }
 
+const Img = styled.img`
+width: 3rem;
+`;
+
 const Header = () => {
 
   return (
     <Container>
       <H2>Luis Dominguez</H2>
-      <Title>(logo react) Frontend Web Developer</Title>
+      <Title><Img src={reactLogo} alt="react logo" /> Frontend Web Developer</Title>
       <Line />
       <Menu>
         <Button onClick={()=>goSection('Summary')}>Summary</Button>
