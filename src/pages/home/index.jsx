@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Line } from '../../components/styles';
-import facebookIcon from '../../resource/images/facebook.jpg';
 import instagramIcon from '../../resource/images/instagram.png';
 import twitterIcon from '../../resource/images/twitter.png';
 import linkedinIcon from '../../resource/images/linkedin.png';
-
+import pokemonLogo from '../../resource/images/poke2.png';
+import ImgMediaCard from '../../components/Card';
 
 
 const Container = styled.div`
@@ -27,7 +27,6 @@ const Social = styled.div`
   height: 5rem;
   justify-content: space-between;
 `;
-
 
 const Anchor = styled.a`
 
@@ -57,14 +56,20 @@ const Home = () => {
         I consider myself a responsible and honest person with interest in technological areas.
         </p>
       </Section>
-      <Section id='Portfolio'>Portfolio</Section>
+      <Section id='Portfolio'>
+        <h3>Portfolio</h3> <br />
+        <ImgMediaCard 
+          src={pokemonLogo}
+          title='Yan ken Pokemon'
+          description='The traditional game of Yan Ken Pon but with a pokemon theme.'
+        />
+      </Section>
       <Section id='Social'>
         <Line /> 
           <Social>
-          <Anchor href='#'> <Img src={facebookIcon}/> </Anchor>
-          <Anchor href='#'> <Img src={instagramIcon}/> </Anchor>
-          <Anchor href='#'> <Img src={twitterIcon}/> </Anchor>
-          <Anchor href='#'> <Img src={linkedinIcon}/> </Anchor>
+          <Anchor href='https://www.instagram.com/luis_d_uri/'> <Img src={instagramIcon}/> </Anchor>
+          <Anchor href='https://twitter.com/Luis_D_Uri'> <Img src={twitterIcon}/> </Anchor>
+          <Anchor href='https://linkedin.com/in/luis-d-uri'> <Img src={linkedinIcon}/> </Anchor>
           </Social>
         <Line />
       </Section>                     

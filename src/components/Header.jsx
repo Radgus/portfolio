@@ -25,15 +25,17 @@ const Menu = styled.div`
 `;
 
 const Button = styled.button`
-  min-width: 6rem;
+  width: 30%;
   min-height: 3rem;
-  margin: 0 2rem;
   background-color: transparent;
   border: none;
   cursor: pointer;
   :hover {
     color: #c28802
   }
+  @media (max-width: 300px) {
+    width: 45%;
+  }   
 `;
 
 const goSection = (id) => {
