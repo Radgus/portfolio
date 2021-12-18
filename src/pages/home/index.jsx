@@ -9,6 +9,7 @@ import surbyteLogo from '../../resource/images/surbyte.png';
 import acuicolaLogo from '../../resource/images/acuicola.png';
 import fellowLogo from '../../resource/images/fellow.jpg';
 import mapLogo from '../../resource/images/dirmap.png';
+import recepcionLogo from '../../resource/images/recepcion.jpg';
 import ImgMediaCard from '../../components/Card';
 
 
@@ -65,6 +66,7 @@ const Home = () => {
         </p>
       </Section>
       <Section id='Portfolio'>
+        <Line /> 
         <h2>Portfolio</h2> <br />
         <SectionContainer>
           <ImgMediaCard 
@@ -100,6 +102,13 @@ const Home = () => {
             title='Display driving directions'
             description='Use the map-box-gl-directions plugin to show results from the Mapbox Directions API. Click the map to add an origin and destination.'
             web='https://luis-profile.herokuapp.com/map-directions'
+            github=''
+          />
+          <ImgMediaCard 
+            src={recepcionLogo}
+            title='Table reservation'
+            description='System for reserving a table in a restaurant.'
+            web='https://radgus.github.io/reservaciones'
             github=''
           />
         </SectionContainer>
