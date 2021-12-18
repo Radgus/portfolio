@@ -5,6 +5,7 @@ import instagramIcon from '../../resource/images/instagram.png';
 import twitterIcon from '../../resource/images/twitter.png';
 import linkedinIcon from '../../resource/images/linkedin.png';
 import pokemonLogo from '../../resource/images/poke2.png';
+import surbyteLogo from '../../resource/images/surbyte.png';
 import ImgMediaCard from '../../components/Card';
 
 
@@ -29,7 +30,11 @@ const Social = styled.div`
 `;
 
 const Anchor = styled.a`
+`;
 
+const SectionContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
 `;
 
 const Img = styled.img`
@@ -58,11 +63,22 @@ const Home = () => {
       </Section>
       <Section id='Portfolio'>
         <h2>Portfolio</h2> <br />
-        <ImgMediaCard 
-          src={pokemonLogo}
-          title='Yan ken Pokemon'
-          description='The traditional game of Yan Ken Pon but with a pokemon theme.'
-        />
+        <SectionContainer>
+          <ImgMediaCard 
+            src={pokemonLogo}
+            title='Yan ken Pokemon'
+            description='The traditional game of Yan Ken Pon but with a pokemon theme.'
+            web='https://radgus.github.io/yankenpokemon'
+            github='https://github.com/Radgus/yankenpokemon'
+          />
+          <ImgMediaCard 
+            src={surbyteLogo}
+            title='Surbyte'
+            description='System to estimate the competitiveness of companies. MERN stack technology.'
+            web='https://www.surbyte.mx'
+            github=''
+          />
+        </SectionContainer>
       </Section>
       <Section id='Social'>
         <Line /> 
