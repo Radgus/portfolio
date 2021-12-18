@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.c1957e6f.chunk.css",
-    "main.js": "/portfolio/static/js/main.3d9cffeb.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.3d9cffeb.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.c3d59b82.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.c3d59b82.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.28f66fac.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.28f66fac.js.map",
     "static/js/2.f2a0cec1.chunk.js": "/portfolio/static/js/2.f2a0cec1.chunk.js",
@@ -18,12 +18,13 @@
     "static/media/instagram.08546dfb.png": "/portfolio/static/media/instagram.08546dfb.png",
     "static/media/poke2.ef9ed58d.png": "/portfolio/static/media/poke2.ef9ed58d.png",
     "static/media/react.add74742.svg": "/portfolio/static/media/react.add74742.svg",
+    "static/media/recepcion.7e3e9ac3.jpg": "/portfolio/static/media/recepcion.7e3e9ac3.jpg",
     "static/media/surbyte.024f7c95.png": "/portfolio/static/media/surbyte.024f7c95.png"
   },
   "entrypoints": [
     "static/js/runtime-main.28f66fac.js",
     "static/js/2.f2a0cec1.chunk.js",
     "static/css/main.c1957e6f.chunk.css",
-    "static/js/main.3d9cffeb.chunk.js"
+    "static/js/main.c3d59b82.chunk.js"
   ]
 }
