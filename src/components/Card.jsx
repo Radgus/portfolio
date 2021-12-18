@@ -56,11 +56,14 @@ export default function ImgMediaCard(props) {
             <b>Web site: </b>{props.web} 
           </A>
         </CardActions>
-        <CardActions>
-          <A href={props.github}   target="_blank">
-            <b>Github: </b>{props.github} 
-          </A>
-        </CardActions>
+        {
+          props.github != '' && 
+          <CardActions>
+            <A href={props.github}   target="_blank">
+              <b>Github: </b>{props.github} 
+            </A>
+          </CardActions>
+        }
       </Card>
     </Container>
   );
