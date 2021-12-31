@@ -11,7 +11,7 @@ const Container = styled.div`
   justify-content: center;
   padding: 1rem 2rem;
   width: 100%;
-  @media (min-width: 800px) {
+  @media (min-width: 700px) {
     width: 50%;
   }
   @media (min-width: 1100px) {
