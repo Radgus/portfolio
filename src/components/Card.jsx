@@ -27,6 +27,11 @@ const A= styled.a`
   display: flex;
   align-items: center;
   justify-content: space-around;
+  p {
+    width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 `;
 
 const Img = styled.img`
@@ -37,6 +42,7 @@ const Img = styled.img`
 
 const Logo = styled.img`
   width: 3rem;
+  margin-right: 0.5rem;
 `;
 
 const Div = styled.div`
@@ -99,14 +105,16 @@ export default function ImgMediaCard(props) {
           props.github != '' && 
           <DivGray>
             <A href={props.github}   target="_blank">
-              <Logo src={githubLogo} alt='github'/> {props.github} 
+              <Logo src={githubLogo} alt='github'/> 
+              <p>{props.github}</p>
             </A>
           </DivGray>
         }
         <Gap />
         <Div>
           <A href={props.web}  target="_blank">
-            <Logo src={pageLogo} alt='github'/> {props.web} 
+            <Logo src={pageLogo} alt='github'/> 
+            <p>{props.web}</p> 
           </A>
         </Div>
       </Card>
