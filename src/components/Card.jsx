@@ -1,9 +1,9 @@
 import * as React from 'react';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-
+import githubLogo from '../resource/images/github.png';
+import pageLogo from '../resource/images/webpage.jpg';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -20,15 +20,23 @@ const Container = styled.div`
 `;
 
 const A= styled.a`
+  width: 100%;
   text-decoration: none;
   color: black;
   font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 `;
 
 const Img = styled.img`
   width: 100%;
   height: 14rem;
   object-fit: cover;
+`;
+
+const Logo = styled.img`
+  width: 3rem;
 `;
 
 const Div = styled.div`
@@ -70,13 +78,13 @@ export default function ImgMediaCard(props) {
           props.github != '' && 
           <DivGray>
             <A href={props.github}   target="_blank">
-              <b>Github: </b>{props.github} 
+              <Logo src={githubLogo} alt='github'/> {props.github} 
             </A>
           </DivGray>
         }
         <Div>
           <A href={props.web}  target="_blank">
-            <b>Web site: </b>{props.web} 
+            <Logo src={pageLogo} alt='github'/> {props.web} 
           </A>
         </Div>
       </Card>
