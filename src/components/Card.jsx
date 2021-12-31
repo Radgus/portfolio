@@ -31,6 +31,21 @@ const Img = styled.img`
   object-fit: cover;
 `;
 
+const Div = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  background-color: aquamarine;
+  border-radius: 0;
+  `;
+
+const DivGray = styled(Div)`
+  background-color: whitesmoke;
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+`;
+
 
 export default function ImgMediaCard(props) {
 
@@ -51,19 +66,19 @@ export default function ImgMediaCard(props) {
             {props.description}
           </Typography>
         </CardContent>
-        <CardActions>
-          <A href={props.web}  target="_blank">
-            <b>Web site: </b>{props.web} 
-          </A>
-        </CardActions>
         {
           props.github != '' && 
-          <CardActions>
+          <DivGray>
             <A href={props.github}   target="_blank">
               <b>Github: </b>{props.github} 
             </A>
-          </CardActions>
+          </DivGray>
         }
+        <Div>
+          <A href={props.web}  target="_blank">
+            <b>Web site: </b>{props.web} 
+          </A>
+        </Div>
       </Card>
     </Container>
   );
