@@ -90,7 +90,7 @@ export default function ImgMediaCard(props) {
         <A href={props.web}  target="_blank">
           <Img
             src={props.src}
-            alt="green iguana"
+            alt={props.alt}
           />
         </A>
         <CardContent>

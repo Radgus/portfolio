@@ -7,6 +7,7 @@ import linkedinIcon from '../../resource/images/linkedin.png';
 import pokemonLogo from '../../resource/images/poke2.png';
 import surbyteLogo from '../../resource/images/surbyte.png';
 import acuicolaLogo from '../../resource/images/acuicola.png';
+import videoLogo from '../../resource/images/video.jpg';
 import fellowLogo from '../../resource/images/fellow.jpg';
 import mapLogo from '../../resource/images/dirmap.png';
 import recepcionLogo from '../../resource/images/recepcion.jpg';
@@ -71,6 +72,7 @@ const Home = () => {
         <SectionContainer>
           <ImgMediaCard 
             src={pokemonLogo}
+            alt='pokemon fight'
             title='Yan ken Pokemon'
             description='The traditional game of Yan Ken Pon but with a pokemon theme.'
             web='https://radgus.github.io/yankenpokemon'
@@ -78,6 +80,7 @@ const Home = () => {
           />
           <ImgMediaCard 
             src={surbyteLogo}
+            alt='Surbyte logo'
             title='Surbyte'
             description='System to estimate the competitiveness of companies. MERN stack technology.'
             web='https://www.surbyte.mx'
@@ -85,13 +88,23 @@ const Home = () => {
           />
           <ImgMediaCard 
             src={acuicolaLogo}
+            alt='Acuicola logo'
             title='Acuicolasoft'
             description='Acuicola production system. Project in Laravel.'
             web='https://acuicolasoft.int.org.mx'
             github=''
           />
           <ImgMediaCard 
+            src={videoLogo}
+            alt='Picture of Igor Korzh in Pexels'
+            title='Luis_d_uri videos'
+            description='Project created during the Platzi Javascript academy.'
+            web='https://radgusvideos.herokuapp.com/'
+            github=''
+          />
+          <ImgMediaCard 
             src={fellowLogo}
+            alt='fellowship Logo'
             title='Tolkien API'
             description='This project consume a free API about Middle Earth of J. R. R. Tolkien.'
             web='https://luis-profile.herokuapp.com/tolkien'
@@ -99,6 +112,7 @@ const Home = () => {
           />
           <ImgMediaCard 
             src={mapLogo}
+            alt='map Logo'
             title='Display driving directions'
             description='Use the map-box-gl-directions plugin to show results from the Mapbox Directions API. Click the map to add an origin and destination.'
             web='https://luis-profile.herokuapp.com/map-directions'
@@ -106,6 +120,7 @@ const Home = () => {
           />
           <ImgMediaCard 
             src={recepcionLogo}
+            alt='reservation Logo'
             title='Table reservation'
             description='System for reserving a table in a restaurant.'
             web='https://radgus.github.io/reservaciones'
