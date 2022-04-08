@@ -1,6 +1,4 @@
 import * as React from 'react';
-// import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import githubLogo from '../resource/images/github.png';
 import pageLogo from '../resource/images/webpage.jpg';
@@ -80,6 +78,16 @@ const Card = styled.div`
   overflow: hidden;
   max-width: 345px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  
+`;
+
+const CardContent = styled.div`
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
 `;
 
 export default function ImgMediaCard(props) {

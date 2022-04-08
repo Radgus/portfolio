@@ -79,6 +79,14 @@ const Home = () => {
             github='https://github.com/Radgus/yankenpokemon'
           />
           <ImgMediaCard 
+            src='https://images.prismic.io/wizeline-academy/650366df-0405-4712-bd3b-2703d87e7a61_watermark-designs-XL6gfkLmkOw-unsplash-web+%281%29.jpg?auto=compress,format&rect=0,26,1920,1231&w=621&h=398'
+            alt='Fornitures'
+            title='Wizeline Bootcamp Capstone'
+            description='Ecommerce Store where you can buy furniture and home decor items.'
+            web='https://react-bootcamp-capstone-4.herokuapp.com/'
+            github='https://github.com/Radgus/react-bootcamp-capstone-4'
+          />
+          <ImgMediaCard 
             src={surbyteLogo}
             alt='Surbyte logo'
             title='Surbyte'
